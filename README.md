@@ -4,7 +4,7 @@ DATA 4000 — Python with AI · Fairfield University
 
 A Streamlit web app connected to a Supabase database. Users pick a customer and a product, enter a quantity, review and confirm the order, and save it. Every saved order is read back from Supabase to verify it.
 
-**Live app:** https://YOUR-APP-NAME.streamlit.app  <!-- replace with your deployed URL -->
+**Live app:** (https://order-entry-app-f8xsyrkuanbdrbnfolcbtn.streamlit.app)
 
 > Access is restricted by a password gate. Access instructions were provided privately through the course submission system.
 
@@ -74,29 +74,24 @@ streamlit run app.py
 
 ## Testing results (deployed app)
 
-Tested on: YYYY-MM-DD at https://YOUR-APP-NAME.streamlit.app
+Tested on: 11/17/2026 at https://YOUR-APP-NAME.streamlit.app
 
 | Test | Expected result | Actual result | Pass? |
 |---|---|---|---|
-| Open the deployed app | Interface loads after authorized access | | |
-| View customers and products | Records are retrieved from Supabase | | |
-| Try an invalid quantity (0, -1, 2.5) | Input is prevented or rejected | | |
-| Submit without confirmation | No order is inserted | | |
-| Confirm and submit a valid order | Exactly one order is inserted | | |
-| View the verification table | Newly saved order is retrieved from Supabase | | |
-| Refresh or interact with another widget | Previously submitted order is not inserted again | | |
-| Refresh order history | Saved order remains visible | | |
-| Extra credit: filter history by customer | Only that customer's orders and their total are shown | | |
+| Open the deployed app | Interface loads after authorized access | | PASS|
+| View customers and products | Records are retrieved from Supabase | | PASS|
+| Try an invalid quantity (0, -1, 2.5) | Input is prevented or rejected | | PASS|
+| Submit without confirmation | No order is inserted | | PASS|
+| Confirm and submit a valid order | Exactly one order is inserted | |PASS |
+| View the verification table | Newly saved order is retrieved from Supabase | | PASS|
+| Refresh or interact with another widget | Previously submitted order is not inserted again | | PASS|
+| Refresh order history | Saved order remains visible | |PASS |
+| Extra credit: filter history by customer | Only that customer's orders and their total are shown | |PASS|
 
 ### Screenshots
 
-Order entry interface:
-
-![Order entry](screenshots/order-entry.png)
-
-Verified order:
-
-![Verified order](screenshots/verified-order.png)
+![Order entry](order-entry.png)
+![Verified order](verified-order.png)
 
 ## Libraries and techniques beyond class material
 
